@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 
@@ -7,10 +8,10 @@ const A = styled.a`
 
 const Header = () => (
   <div>
-    <Link href='/'>
+    <Link href="/">
       <A>Home</A>
     </Link>
-    <Link href='/about'>
+    <Link href="/about">
       <A>About</A>
     </Link>
   </div>

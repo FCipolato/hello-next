@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import Header from './Header';
 
@@ -7,10 +8,10 @@ const Div = styled.div`
   border: 1px solid #DDD;
 `;
 
-const Layout = (props) => (
+const Layout = ({ children }) => (
   <Div>
     <Header />
-    {props.children}
+    {children}
   </Div>
 );
 
