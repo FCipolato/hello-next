@@ -10,10 +10,10 @@ module.exports = {
 
     const res = await axios.get('https://api.tvmaze.com/search/shows?q=batman');
     const data = await res.data;
-    const shows = data.map((el) => el.show);
+    const shows = data.map(el => el.show);
 
     // eslint-disable-next-line array-callback-return
-    shows.map((show) => {
+    shows.map(show => {
       paths[`/show/${show.id}`] = { page: '/show/[id]', query: { id: show.id } };
     });
 

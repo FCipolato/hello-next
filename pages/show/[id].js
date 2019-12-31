@@ -10,7 +10,7 @@ const Post = ({ show }) => (
   </Layout>
 );
 
-Post.getInitialProps = async (ctx) => {
+Post.getInitialProps = async ctx => {
   const { id } = ctx.query;
   const res = await axios.get(`https://api.tvmaze.com/shows/${id}`);
   const show = res.data;

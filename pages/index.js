@@ -10,7 +10,7 @@ const Index = ({ shows }) => (
   <Layout>
     <h1>Batman TV Shows</h1>
     <ul>
-      {shows.map((show) => (
+      {shows.map(show => (
         <li key={show.id}>
           <Link href="/show/[id]" as={`/show/${show.id}`}>
             <A>{show.name}</A>
@@ -26,7 +26,7 @@ Index.getInitialProps = async () => {
   const { data } = res;
 
   return {
-    shows: data.map((el) => el.show),
+    shows: data.map(el => el.show),
   };
 };
 
