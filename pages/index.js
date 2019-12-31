@@ -1,7 +1,9 @@
 import React from 'react';
+
 import axios from 'axios';
 import Link from 'next/link';
 import styled from 'styled-components';
+
 import Layout from '../components/MyLayout';
 
 const A = styled.a``;
